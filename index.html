@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Cafe Qu Dable </title>
+
+    <!--아이콘 스크립트 소스-->
+    <script src="https://kit.fontawesome.com/80f658f160.js" crossorigin="anonymous"></script>
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/index_style.css"></link>
+</head>
+
+<body>
+    <!--헤더-->
+    <header>
+        <div>
+            <!--타이틀-->
+            <h1> Qu dable </h1> 
+                
+            <nav>
+                <!--모바일 화면 내비게이션 바-->
+                <div class="mobileMenu">
+                    <a href="#" id="barButton">
+                        <i class="fa-solid fa-bars fa-2x"
+                        style="color: black">
+                        </i>
+                    </a>
+                
+                    <div class="sideMenu">
+                        <a href="#" id="xButton">
+                            <i class="fa-solid fa-xmark fa-2x"
+                                style="color: black">
+                            </i>
+                        </a>
+
+                        <ul>
+                            <li><a href="#"> Menu </a></li>
+                            <li><a href="#"> Store </a></li>
+                            <li><a href="#"> News </a></li>
+                            <li><a href="#"> Customer </a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!--PC 화면 내비게이션 바-->
+                <div class="pcMenu">
+                    <ul>
+                        <li>
+                            <a href="#"> Menu </a>
+                                <ul class="dropMenu">
+                                    <li><a href="#"> 커피 </a></li>
+                                    <li><a href="#"> 음료/티 </a></li>
+                                    <li><a href="#"> 디저트 </a></li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"> Store </a>
+                                <ul class="dropMenu">
+                                    <li><a href="#"> 큐데이블 소개 </a></li>
+                                    <li><a href="#"> 찾아오시는 길 </a></li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"> News </a>
+                                <ul class="dropMenu">
+                                    <li><a href="#"> 큐데이블 소식 </a></li>
+                                    <li><a href="#"> 이벤트 </a></li>
+                                </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"> Customer </a>
+                                <ul class="dropMenu">
+                                    <li><a href="#"> 고객의 소리 </a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--화면 스크롤 시 헤더 내비게이션 바 색상 변하는 지점-->
+    <div class="page-start">
+    </div>
+
+
+    <!--본문-->
+    <div class="contents">
+        <section id="drinks">
+            <div class="text">
+                <h2> Drinks </h2>
+
+                <p> 큐데이블만의 시그니처 커피와 <br/> 직접 담근 과일청으로 만든 음료를 소개합니다. </p>
+
+                <a href="#"> MENU </a>
+            </div>
+
+            <div class="image">
+                <img src="./images/menu.png" alt="음료">
+            </div>
+        </section>
+
+
+        <section id="dessert">
+            <div class="text">
+                <h2> Dessert </h2>
+
+                <p> 큐데이블에서는 당일에 갓 구운 <br/> 각종 디저트를 맛 볼 수 있어요. </p>
+
+                <a href="#"> MENU </a>
+            </div>
+
+            <div class="image">
+                <img src="./images/dessert.png" alt="디저트">
+            </div>
+        </section>
+
+
+        <section id="store">
+            <div class="text">
+                <h2> Store </h2>
+
+                <p> 지금 스토어에 방문해서 <br/> 큐데이블 커피와 디저트를 즐겨보세요. </p>
+
+                <a href="#"> MORE </a>
+            </div>
+
+            <div class="image">
+                <img src="./images/store.png" alt="거울">
+            </div>
+        </section>
+
+
+        <section id="order">
+            <div class="text">
+                <h2> Order </h2>
+
+                <p> 배민과 요기요에서도 큐데이블 커피를 주문하실 수 있습니다. </p>
+
+                <div class="deliveryLogo">
+                    <div>
+                        <a href="https://baemin.com" target="_blank"> 
+                            <picture>
+                                <source srcset="./images/baemin_pc.png" media="(min-width: 1024px)">
+                                <source srcset="./images/baemin_tablet.png" media="(min-width: 768px">
+                                <source srcset="./images/baemin_mobile.png" media="(min-width: 320px)">
+                                <img src="./images/baemin_pc.png">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="https://yogiyo.co.kr" target="_blank"> 
+                            <picture>
+                                <source srcset="./images/yogiyo_pc.png" media="(min-width: 1024px)">
+                                <source srcset="./images/yogiyo_tablet.png" media="(min-width: 768px">
+                                <source srcset="./images/yogiyo_mobile.png" media="(min-width: 320px)">
+                                <img src="./images/yogiyo_pc.png">
+                            </picture> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--배너-->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/banner1.png" alt="배너1">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="./images/banner2.png" alt="배너2">
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+    
+
+    <!--푸터-->
+    <footer>
+        <h3> 큐데이블 </h3>
+
+        <p> 
+            대표 : 이 OO <br/><br/>
+            02-OOO-OOOO <br/><br/>
+            서울시 동대문구 사가정로 25길 28-4 <br/><br/>
+            instagram : @qu_dable <br/><br/>
+        </p>
+
+        <i>
+            Copyright &copy; 2022 큐데이블 All Rights Reserved.
+        </i>
+    </footer>
+
+
+    <!--토글 메뉴를 위한 제이쿼리 플러그인 스크립트 소스 연결-->
+    <script src="js/jquery-3.6.1.js"></script>
+
+    <!--토글 메뉴 구현을 위한 자바스크립트 소스 삽입-->
+    <script>
+        $(function() {
+           let bar = $('a#barButton'); 
+           let x = $('a#xButton');
+           let menu = $('div.sideMenu');
+
+           // 토글바 버튼을 클릭하면 사이드메뉴가 나타남
+           $(bar).on('click', function() {
+                menu.show().animate({
+                    right: 0
+                });
+           });
+
+           // X 버튼을 클릭하면 사이드 메뉴가 사라짐
+           $(x).on('click', function() {
+                menu.animate({
+                    right: '-' + 40 + '%'
+                },
+                function() {
+                    menu.hide();
+                });
+           });
+
+
+           // PC 화면에서 헤더 메뉴바에 마우스 올리면 하위 메뉴가 나타남
+           // 마우스를 떼면 하위 메뉴가 사라짐
+           $('.dropMenu').hide();
+
+           $('header > div').mouseover(function() {
+            $('.dropMenu').slideDown();
+            });
+
+           $('header > div').mouseleave(function() {
+            $('.dropMenu').hide();
+            });
+
+
+            // 화면 스크롤시 헤더 메뉴바의 색상이 변하도록
+            let $header = $('header > div');
+            let $page = $('.page-start');
+            let $window = $(window);
+            let pageOffsetTop = $page.offset().top;
+
+            $window.resize(function() {
+                pageOffsetTop = $page.offset().top;
+            });
+
+            $window.on('scroll', function() {
+                let scrolled = $window.scrollTop() >= pageOffsetTop;
+                $header.toggleClass('scrollHeader', scrolled);
+            });
+        });
+    </script>
+
+
+    <!--swiper slider cdn 링크-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8.4.2/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.2/swiper-bundle.css">
+
+    <!--swiper slider 옵션 설정-->
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        delay: 4000,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        });
+    </script>
+</body>
+</html>

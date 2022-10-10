@@ -1,0 +1,369 @@
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/hall_mobile.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header:after {
+    display: block;
+    width: 100%;
+    content: ""
+}
+
+.scrollHeader {
+    background-color: #f1ede3;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /* 메뉴바 상단 고정 */
+    top: 0;
+    width: 100%;
+}
+
+header > div > h1 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+header > div > nav > div.mobileMenu > a#barButton {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+header > div > nav > div.mobileMenu > div.sideMenu {
+    display: none;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -40%;
+    z-index: 2;
+    background: #f1ede3;
+}
+
+header > div > nav > div.mobileMenu > div.sideMenu > a#xButton {
+    display: block;
+    width: 50px;
+    margin: 10px 10px 5px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+header > div > nav > div.mobileMenu > div.sideMenu > ul > li {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px auto;
+    border-bottom: 1px solid white;
+}
+
+header > div > nav > div.mobileMenu > div.sideMenu > ul > li:first-child {
+    border-top: 1px solid white;
+}
+
+header > div > nav > div.mobileMenu > div.sideMenu > ul > li > a {
+    display: block;
+    width: 100%;
+    margin: 5px;
+    padding: 50px;
+}
+
+header > div > nav > div.pcMenu {
+    display: none;
+}
+
+.dropMenu {
+    display: none;
+}
+
+
+/* 본문 */
+div.contents > section {
+    display: block;
+    margin-bottom: 12rem;
+}
+
+div.contents > section#drinks {
+    margin-top: 10rem;
+}
+
+div.contents > section#order {
+    margin-bottom: 10rem;
+}
+
+div.contents > section > div.text {
+    margin: 5rem auto 5rem auto;
+    padding: 50px auto;
+    text-align: center;
+}
+
+div.text > h2 {
+    margin: 30px auto 10px auto;
+    font-size: 1.5rem;
+    border-bottom: 3px solid #a59a7e;
+    width: 20%;
+}
+
+div.text > p {
+    margin: 4rem;
+    font-size: 1.2rem;
+}
+
+div.text > a {
+    font-size: 1.2rem;
+    display: block;
+    width: 100px;
+    margin: 10px auto 10px auto; /* 공간을 가로 중간 정렬할 때 margin-right, left 속성 auto 사용 */
+    padding: 10px;
+    border: 2px solid #a59a7e;
+    border-radius: 5px;
+    color: #a59a7e;
+}
+
+div.contents > section > div.image {
+    width: 350px;
+    height: 350px;
+    margin: 5rem auto 5rem auto; /* 공간을 가로 중간 정렬할 때 margin-right, left 속성 auto 사용 */
+}
+
+div.contents > section > div.image > img {
+    width: 100%;
+    height: 100%;
+}
+
+div.deliveryLogo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+div.deliveryLogo > div {
+    width: 100px;
+}
+
+
+/* 배너 */
+div.swiper {
+    margin-bottom: 6rem;
+}
+
+.swiper-slide > img {
+    width: 100%;
+}
+
+
+/* 푸터 */
+footer {
+    padding: 3rem;
+    background-color: #f1ede3a7;
+}
+
+footer > h3 {
+    margin-bottom: 2rem;
+}
+
+footer > p {
+    margin-bottom: 2rem;
+}
+
+
+
+/* 태블릿 화면 */
+@media screen and (min-width: 768px) {
+
+    header > div > nav > div.mobileMenu > div.sideMenu > a#xButton {
+        padding: 15px;
+    }
+
+    header > div > nav > div.mobileMenu > div.sideMenu > ul > li {
+        font-size: 1.8em;
+    }
+
+    div.contents > section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 14rem;
+    }
+
+    div.contents > section#drinks {
+        margin-top: 13rem;
+    }
+    
+    div.contents > section#order {
+        margin-bottom: 13rem;
+    }
+
+    div.contents > section:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+
+    div.contents > section > div.text {
+        width: 47%;
+        height: 100%;
+        margin: auto 0;
+        padding: 85px auto;
+    }
+
+    div.contents > section#order > div.text {
+        width: 100%;
+    }
+
+    div.text > h2 {
+        font-size: 1.7rem;
+    }
+
+    div.text > p {
+        font-size: 1.3rem;
+    }
+
+    div.text > a {
+        font-size: 1.3rem;
+    }
+
+    div.contents > section > div.image {
+        width: 36%;
+        height: 80%;
+        margin: auto 0;
+    }
+
+    div.deliveryLogo > div {
+        width: 140px;
+    }
+
+    div.swiper {
+        margin-bottom: 8rem;
+    }
+}
+
+
+
+
+/* PC 화면 */
+@media screen and (min-width: 1024px) {
+
+    header {
+        background: url('../images/hall_pc.png') no-repeat fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header > div {
+        justify-content: space-around;
+    }
+
+    header > div > h1 {
+        width: 15%;
+    }
+
+    header > div > nav {
+        width: 65%;
+    }
+
+    header > div > nav > div.mobileMenu {
+        display: none;
+    }
+
+    header > div > nav > div.pcMenu {
+        display: block;
+    }
+
+    header > div > nav > div.pcMenu > ul {
+        display: flex;
+    }
+
+    header > div > nav > div.pcMenu > ul > li {
+        width: 25%;
+        margin: 10px;
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    header > div > nav > div.pcMenu > ul > li > a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    header > div:hover {
+        background: #f1ede3;
+    }
+
+    .dropMenu > li {
+        margin: 25px auto;
+        font-size: 0.75em;
+    }
+
+    .dropMenu > li > a {
+        padding: 15px;
+    }
+
+    div.contents > section {
+        margin-bottom: 15rem;
+    }
+
+    div.contents > section#drinks {
+        margin-top: 14rem;
+    }
+    
+    div.contents > section#order {
+        margin-bottom: 14rem;
+    }
+
+    div.text > h2 {
+        font-size: 1.9rem;
+    }
+
+    div.text > p {
+        font-size: 1.4rem;
+    }
+
+    div.text > a {
+        font-size: 1.4rem;
+    }
+
+    div.deliveryLogo > div {
+        width: 200px;
+    }
+
+    div.swiper {
+        margin-bottom: 12rem;
+    }
+
+    footer {
+        padding: 3.5rem;
+    }
+}
